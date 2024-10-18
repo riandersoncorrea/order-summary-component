@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Red Hat Display", sans-serif;
+  box-sizing: border-box;
+}
+body {
+  background-image: url("images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: hsl(225, 100%, 94%);
+}
+
+h1 {
+  font-size: 26px;
+}
+p {
+  font-size: 16px;
+  font-weight: 500;
+  color: hsl(224, 23%, 55%);
+}
+
+a {
+  font-weight: 700;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  padding: 2% 35%;
+  height: 100vh;
+}
+
+.conteiner-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  justify-items: center;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 25px;
+  gap: 2em;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.16);
+}
+
+#conteiner-ilustration {
+  width: 100%;
+}
+#conteiner-ilustration img {
+  width: 100%;
+  border-radius: 25px 25px 0 0;
+}
+
+.conteiner-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  gap: 1.2em;
+  padding: 2% 8%;
+  text-align: center;
+}
+
+.conteiner-top p {
+  line-height: 1.6em;
+}
+
+.conteiner-middle {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  background-color: hsl(225, 100%, 98%);
+  padding: 5.7% 5%;
+  border-radius: 15px;
+  width: 70%;
+}
+
+.conteiner-middle a {
+  color: hsl(245, 75%, 52%);
+}
+.conteiner--middle-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-items: center;
+  align-items: center;
+  gap: 2.7em;
+}
+
+.conteiner--middle-box-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-items: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.conteiner--middle-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  justify-items: center;
+  gap: 0.35em;
+}
+
+.conteiner--middle-content h2 {
+  font-size: 16px;
+}
+
+.conteiner-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  justify-items: center;
+  align-items: center;
+  gap: 1.5em;
+  width: 70%;
+  padding-bottom: 8%;
+  font-weight: 700;
+}
+
+.conteiner-bottom a {
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  padding: 4.5% 6%;
+  color: hsl(224, 23%, 55%);
+}
+
+#botao {
+  background-color: hsl(245, 75%, 52%);
+  text-align: center;
+  color: #ffffff;
+  width: 100%;
+  padding: 4.5% 6%;
+  border-radius: 10px;
+  box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.25);
+}
+
+#botao:hover {
+  background-color: hsl(225, 100%, 98%);
+  color: hsl(245, 75%, 52%);
+  transition-duration: 0.5s;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 2% 4%;
+  }
+  p {
+    font-size: 15px;
+  }
+  .conteiner--middle-content h2 {
+    font-size: 12px;
+  }
+  .conteiner--middle-box-content img {
+    max-width: 38px;
+    width: 100%;
+  }
+  .conteiner--middle-box-content p {
+    font-size: 13px;
+  }
+  .conteiner--middle-box a {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+  p {
+    font-size: 18px;
+  }
+  .container {
+    padding: 2% 12%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  h1 {
+    font-size: 30px;
+  }
+  p {
+    font-size: 19px;
+  }
+  a {
+    font-size: 19px;
+  }
+  .container {
+    padding: 2% 22%;
+  }
+
+  .conteiner--middle-content h2 {
+    font-size: 18px;
+  }
+
+  .conteiner--middle-box-content img {
+    max-width: 48px;
+    width: 100%;
+  }
+
+  .attribution a {
+    font-size: 11px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+  p {
+    font-size: 22px;
+  }
+  .container {
+    padding: 49% 25%;
+  }
+
+  .attribution a {
+    font-size: 11px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1500px) {
+  p {
+    font-size: 20px;
+  }
+  .container {
+    padding: 32%;
+  }
+}
+
+@media (min-width: 1500px) and (max-width: 1440px) {
+  p {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1441px) {
+  p {
+    font-size: 23px;
+  }
+
+  a {
+    font-size: 19px;
+  }
+
+  .container {
+    padding: 34%;
+  }
+
+  .conteiner--middle-content h2 {
+    font-size: 19px;
+  }
+
+  .conteiner--middle-box-content img {
+    width: 54px;
+  }
+
+  .attribution a {
+    font-size: 11px;
+  }
+}
